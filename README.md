@@ -1,17 +1,17 @@
-# MCP Chat
+## MCP Chat
 
 MCP Chat is a command-line interface application that enables interactive chat capabilities with AI models through the Anthropic API. The application supports document retrieval, command-based prompts, and extensible tool integrations via the MCP (Model Control Protocol) architecture.
 
 
 ![VMCP Server Primitives](images/MCP_Server_Primitives.png)
 
-# MCP Server Primitives
+## MCP Server Primitives
 
 - Need to give LLM new capabilities? Use tools
 - Need to get data into your app for UI or context? Use resources
 - Want to create predefined workflows for users? Use prompts
 
-# MCP Inspector
+## MCP Inspector
 
 You can test resources using the MCP Inspector
 
