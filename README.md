@@ -2,6 +2,24 @@
 
 MCP Chat is a command-line interface application that enables interactive chat capabilities with AI models through the Anthropic API. The application supports document retrieval, command-based prompts, and extensible tool integrations via the MCP (Model Control Protocol) architecture.
 
+
+![VMCP Server Primitives](images/MCP_Server_Primitives.png)
+
+# MCP Server Primitives
+
+- Need to give LLM new capabilities? Use tools
+- Need to get data into your app for UI or context? Use resources
+- Want to create predefined workflows for users? Use prompts
+
+# MCP Inspector
+
+You can test resources using the MCP Inspector
+
+```bash
+uv run mcp dev mcp_server.py
+```
+
+
 ## Prerequisites
 
 - Python 3.9+
@@ -42,7 +60,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 uv pip install -e .
 ```
 
-4. Run the project
+4. Run the project:
 
 ```bash
 uv run main.py
@@ -63,7 +81,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install anthropic python-dotenv prompt-toolkit "mcp[cli]==1.8.0"
 ```
 
-3. Run the project
+3. Run the project:
 
 ```bash
 python main.py
@@ -98,6 +116,7 @@ Commands will auto-complete when you press Tab.
 
 There are no lint or type checks implemented.
 
-## Usefull Links
+## Useful Links
+
 https://modelcontextprotocol.io/introduction
 
